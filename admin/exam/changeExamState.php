@@ -71,7 +71,7 @@
                 $entrycheck = "SELECT * FROM submissions WHERE userid='$stuid' AND examid='$examid'";
                 $entrycheckquery = mysqli_query($conn, $entrycheck);
                 $entryrow = mysqli_fetch_array($entrycheckquery);
-                if($entryrow['status'] == 0){
+                if(($entryrow['status'] == 0) || ($entryrow['status'] == 3)){
                     $updatestatusquery = "UPDATE submissions SET status=3, resulttext='Didnot Appear', result='0', resultDivision='0' WHERE userid='$stuid' AND examid='$examid'";
                     $updatestatusqueryexec = mysqli_query($conn, $updatestatusquery);
                 }elseif(($entryrow['status'] == 2) || ($entryrow['status'] == 4)){

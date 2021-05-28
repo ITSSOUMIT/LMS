@@ -107,6 +107,7 @@
                       <th>Time taken to submit</th>
                       <th>Changed Tabs</th>
                       <th>Marks Obtained</th>
+                      <th>Percentage</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -139,13 +140,15 @@
                             if($submission['resultviewallowed']==0){
                         ?>
                             <td><font color="red">Result Not Yet Published</font></td>
+                            <td><font color="red">Result Not Yet Published</font></td>
                             <td>
                                 <button type="button" class="btn btn-block btn-info btn-xs" disabled>View Answer Sheet</button>
                             </td>
                         <?php
                             }elseif($submission['resultviewallowed']==1){
                         ?>
-                            <td><?php echo $submission['result']; ?></td>
+                            <td><?php echo $submission['result']; ?> / <?php echo $submission['fullmarks']; ?></td>
+                            <td><?php echo round($submission['result']/$submission['fullmarks']*100, 2); ?> %</td>
                             <td>
                                 <?php if(($submission['status']==3) || ($submission['status']==5)){ ?>
                                   <button type="button" class="btn btn-block btn-warning btn-xs" disabled>Didnot Appear / Answer Sheet Not Uploaded</button>
