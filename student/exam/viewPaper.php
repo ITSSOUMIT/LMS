@@ -108,7 +108,7 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-            <div class="col-5">
+            <div class="col-xs-12 col-lg-5">
                 <div class="row">
                     <h5 class="mb-2">Question Paper :</h5>
                 </div>
@@ -116,7 +116,7 @@
                     <iframe src="<?php echo $exam['questionpaper']; ?>pub?embedded=true#toolbar=0&navpanes=0" width="100%" height="825px" frameborder=0></iframe>
                 </div>
             </div>
-            <div class="col-5">
+            <div class="col-xs-12 col-lg-5">
                 <div class="row">
                     <h5 class="mb-2">Answer Script :</h5>
                 </div>
@@ -124,7 +124,7 @@
                     <iframe src="../../<?php echo $submission['answerscript']; ?>#toolbar=0&navpanes=0" width="100%" height="825px" frameborder=0></iframe>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-xs-12 col-lg-2">
                 <div class="card card-primary">
                 <div class="card-header">
                     <h3 class="card-title">Marking Panel</h3>
