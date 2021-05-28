@@ -179,6 +179,7 @@
                                 <th>Time taken to submit</th>
                                 <th>Changed Tabs</th>
                                 <th>Marks Obtained</th>
+                                <th>Percentage</th>
                                 <th>Action</th>
                                 </tr>
                             </thead>
@@ -202,13 +203,15 @@
                                         if($submission['result']==NULL){
                                     ?>
                                     <td><font color="red">Unevaluated</font></td>
+                                    <td><font color="red">Unevaluated</font></td>
                                     <td>
                                         <button type="button" class="btn btn-block btn-info btn-xs" onclick="window.location.href='checkPaper?examid=<?php echo $examid; ?>&submissionid=<?php echo $submission['submissionid']; ?>'">Check Answer Sheet</button>
                                     </td>
                                     <?php
                                         }else{
                                     ?>
-                                    <td><?php echo $submission['result']; ?></td>
+                                    <td><?php echo $submission['result'] / $submission['fullmarks']; ?></td>
+                                    <td><?php echo round($submission['result']/$submission['fullmarks']*100, 2); ?> %</td>
                                     <td>
                                         <button type="button" class="btn btn-block btn-info btn-xs" onclick="window.location.href='checkPaper?examid=<?php echo $examid; ?>&submissionid=<?php echo $submission['submissionid']; ?>'">Re-Check Answer Sheet</button>
                                     </td>
