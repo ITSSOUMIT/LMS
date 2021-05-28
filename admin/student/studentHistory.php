@@ -191,7 +191,7 @@
                         <?php
                             }else{
                         ?>
-                            <td><?php echo $submission['result'] / $submission['fullmarks']; ?></td>
+                            <td><?php echo $submission['result']." / ".$submission['fullmarks']; ?></td>
                             <td><?php echo round($submission['result']/$submission['fullmarks']*100, 2); ?> %</td>
                             <td>
                                 <?php if(($submission['status']==3) || ($submission['status']==5)){ ?>
