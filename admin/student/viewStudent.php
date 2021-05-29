@@ -94,9 +94,9 @@
             <?php
                 if(strcmp($batchneed, "ALL")==0){
             ?>
-            <div class="col-2"><button type="button" class="btn btn-block btn-primary btn-sm" onclick="window.location.href='viewStudent?batch=ALL'">ALL</button></div>
+            <div class="col-2 mt-2"><button type="button" class="btn btn-block btn-primary btn-sm" onclick="window.location.href='viewStudent?batch=ALL'">ALL</button></div>
             <?php }else{ ?>
-            <div class="col-2"><button type="button" class="btn btn-block btn-outline-primary btn-sm" onclick="window.location.href='viewStudent?batch=ALL'">ALL</button></div>
+            <div class="col-2 mt-2"><button type="button" class="btn btn-block btn-outline-primary btn-sm" onclick="window.location.href='viewStudent?batch=ALL'">ALL</button></div>
             <?php } ?>
             <?php
                 $batchquery = "SELECT * FROM batch WHERE status=1";
@@ -104,9 +104,9 @@
                 while($batch = mysqli_fetch_array($batchqueryexec)){
                     if(strcmp($batchneed, $batch['batchcode'])==0){
             ?>
-            <div class="col-2"><button type="button" class="btn btn-block btn-primary btn-sm" onclick="window.location.href='viewStudent?batch=<?php echo $batch['batchcode']; ?>'"><?php echo $batch['batchcode']; ?></button></div>
+            <div class="col-2 mt-2"><button type="button" class="btn btn-block btn-primary btn-sm" onclick="window.location.href='viewStudent?batch=<?php echo $batch['batchcode']; ?>'"><?php echo $batch['batchcode']; ?></button></div>
             <?php }else{ ?>
-            <div class="col-2"><button type="button" class="btn btn-block btn-outline-primary btn-sm" onclick="window.location.href='viewStudent?batch=<?php echo $batch['batchcode']; ?>'"><?php echo $batch['batchcode']; ?></button></div>
+            <div class="col-2 mt-2"><button type="button" class="btn btn-block btn-outline-primary btn-sm" onclick="window.location.href='viewStudent?batch=<?php echo $batch['batchcode']; ?>'"><?php echo $batch['batchcode']; ?></button></div>
             <?php }} ?>
         </div>
       </div>
