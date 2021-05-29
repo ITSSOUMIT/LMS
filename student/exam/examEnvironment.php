@@ -104,7 +104,7 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-            <iframe src="<?php echo $questionpaper; ?>pub?embedded=true" width="100%" height="825px" frameborder=0></iframe>
+            <iframe src="../../<?php echo $questionpaper; ?>" width="100%" height="825px" frameborder=0></iframe>
         </div>
       </div><!-- /.container-fluid -->
     </section>

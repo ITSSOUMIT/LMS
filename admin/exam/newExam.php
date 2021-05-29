@@ -123,7 +123,7 @@
                           <?php } ?>
                         </select>
                   </div>
-                  <!-- <div class="form-group">
+                  <div class="form-group">
                     <label for="exampleInputFile">Question Paper</label>
                     <div class="input-group">
                       <div class="custom-file">
@@ -131,11 +131,11 @@
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                     </div>
-                  </div> -->
-                  <div class="form-group">
+                  </div>
+                  <!-- <div class="form-group">
                     <label for="exampleInputEmail1">Question Paper</label>
                     <input type="text" class="form-control" placeholder="Enter Question Paper Link" name="questionpaper" required>
-                  </div>
+                  </div> -->
                   <div class="row">
                     <div class="col-4">
                       <div class="form-group">

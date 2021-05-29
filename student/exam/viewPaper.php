@@ -113,7 +113,8 @@
                     <h5 class="mb-2">Question Paper :</h5>
                 </div>
                 <div class="row">
-                    <iframe src="<?php echo $exam['questionpaper']; ?>pub?embedded=true#toolbar=0&navpanes=0" width="100%" height="825px" frameborder=0></iframe>
+                    <!-- <iframe src="<?php echo $exam['questionpaper']; ?>pub?embedded=true#toolbar=0&navpanes=0" width="100%" height="825px" frameborder=0></iframe> -->
+                    <iframe src="../../<?php echo $exam['questionpaper']; ?>" width="100%" height="825px" frameborder=0></iframe>
                 </div>
             </div>
             <div class="col-xs-12 col-lg-5">

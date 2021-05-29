@@ -142,19 +142,19 @@
                           <?php }} ?>
                         </select>
                   </div>
-                  <!-- <div class="form-group">
+                  <div class="form-group">
                     <label for="exampleInputFile">Question Paper</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile" name="questionpaper" required>
+                        <input type="file" class="custom-file-input" id="exampleInputFile" name="questionpaper">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                     </div>
-                  </div> -->
-                  <div class="form-group">
+                  </div>
+                  <!-- <div class="form-group">
                     <label for="exampleInputEmail1">Question Paper</label>
                     <input type="text" class="form-control" placeholder="Enter Question Paper Link" name="questionpaper" value="<?php echo $exam['questionpaper'].'edit?usp=sharing'; ?>" required>
-                  </div>
+                  </div> -->
                   <div class="row">
                     <div class="col-4">
                       <div class="form-group">

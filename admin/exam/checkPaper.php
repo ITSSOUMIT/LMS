@@ -114,7 +114,7 @@
                     <h5 class="mb-2">Question Paper :</h5>
                 </div>
                 <div class="row">
-                    <iframe src="<?php echo $exam['questionpaper']; ?>pub?embedded=true#toolbar=0&navpanes=0" width="100%" height="825px" frameborder=0></iframe>
+                    <iframe src="../../<?php echo $exam['questionpaper']; ?>" width="100%" height="825px" frameborder=0></iframe>
                 </div>
             </div>
             <div class="col-xs-12 col-lg-5">
@@ -144,7 +144,7 @@
                         </div>
                         <div class="form-group">
                         <label>Comments :</label>
-                            <textarea class="form-control" rows="6" placeholder="Enter detailed answer review" name="resulttext" required><?php if(isset($submission['resulttext'])){ echo $submission['resulttext']; } ?></textarea>
+                            <textarea class="form-control" rows="6" placeholder="Enter detailed answer review" name="resulttext"><?php if(isset($submission['resulttext'])){ echo $submission['resulttext']; } ?></textarea>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="confirmation(this)">

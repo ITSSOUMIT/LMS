@@ -122,7 +122,7 @@
                         <td><?php echo $c; ?></td>
                         <td><?php echo $ongoingexam['examname']; ?></td>
                         <td><?php echo $ongoingexam['batchcode']; ?></td>
-                        <td><a href="<?php echo $ongoingexam['questionpaper']; ?>" target="_blank">View Question Paper</a></td>
+                        <td><a href="../../<?php echo $ongoingexam['questionpaper']; ?>" target="_blank">View Question Paper</a></td>
                         <td><?php echo $ongoingexam['fullmarks']; ?></td>
                         <td><?php echo $ongoingexam['examduration']; ?> mins</td>
                         <td><?php echo $ongoingexam['submissionduration']; ?> mins</td>
